@@ -46,7 +46,7 @@
         </div>
         <div class="flex justify-center items-center gap-[5px] w-[33.3%]">
           <img class="h-[18%] lg:h-[25%]" src="./assets/coin.png" alt="" />
-          <h1 class="text-[#111111] font-semibold poppins-font">7000</h1>
+          <h1 id="account-balance" class="text-[#111111] font-semibold poppins-font">7000</h1>
           <h1 class="text-[#111111] font-semibold poppins-font">BDT</h1>
         </div>
       </nav>
@@ -72,7 +72,7 @@
                 class="flex items-center justify-center gap-1 w-[50%] lg:w-[20%] rounded-lg h-10 bg-[#e1e1e1d0] mb-2 poppins-font"
               >
                 <img class="h-[60%]" src="./assets/coin.png" alt="" />
-                <h1 class="text-[#111111] font-medium poppins-font">16000</h1>
+                <h1 id="noakhali-total-donation" class="text-[#111111] font-medium poppins-font">16000</h1>
                 <h1 class="text-[#111111] font-medium poppins-font">BDT</h1>
               </div>
               <h1 class="text-xl font-bold poppins-font">
@@ -86,13 +86,13 @@
                 supporting the relief efforts and making a positive impact on
                 the lives of those in need.
               </p>
-              <input
+              <input id="input-donation-amount"
                 type="text"
                 placeholder="Enter Donation Amount"
                 class="input input-bordered w-full"
               />
               <button
-                class="btn w-full mt-3 poppins-font bg-orange-400 text-white"
+                id="btn-donate-now" class="btn w-full mt-3 poppins-font bg-orange-400 text-white"
               >
                 Donate Now
               </button>
@@ -241,5 +241,7 @@
         </div>
       </nav>
     </footer>
+    <script src="./js/utilities.js"></script>
+    <script src="./js/donate.js"></script>
   </body>
 </html>
