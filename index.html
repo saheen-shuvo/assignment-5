@@ -39,154 +39,192 @@
           </button>
         </div>
         <div class="flex justify-center items-center gap-2 w-[40.3%]">
-          <img class="h-[20%] lg:h-[40%] " src="./assets/logo.png" alt="" />
-          <h1 class="text-[#111111] text-base text-center lg:text-xl font-bold poppins-font">
+          <img class="h-[20%] lg:h-[40%]" src="./assets/logo.png" alt="" />
+          <h1
+            class="text-[#111111] text-base text-center lg:text-2xl font-semibold poppins-font"
+          >
             Hands For Bangladesh
           </h1>
         </div>
         <div class="flex justify-center items-center gap-[5px] w-[33.3%]">
           <img class="h-[18%] lg:h-[25%]" src="./assets/coin.png" alt="" />
-          <h1 id="account-balance" class="text-[#111111] font-semibold poppins-font">7000</h1>
+          <h1
+            id="account-balance"
+            class="text-[#111111] font-semibold poppins-font"
+          >
+            7000
+          </h1>
           <h1 class="text-[#111111] font-semibold poppins-font">BDT</h1>
         </div>
       </nav>
-    </header>
-    <main>
       <!-- Button Section -->
       <div class="flex justify-center gap-4">
-        <button class="btn btn-lg w-[160px] poppins-font">Donation</button>
-        <button class="btn btn-lg w-[160px] poppins-font">History</button>
+        <button id="btn-donation" class="btn btn-lg w-[160px] poppins-font">Donation</button>
+        <button id="btn-donation-history" class="btn btn-lg w-[160px] poppins-font">History</button>
       </div>
-      <!-- Card-1 -->
-      <div class="mx-3 lg:mx-56 mt-16">
-        <div
-          class="hero bg-[#eceaea38] p-3 rounded-lg border-gray-100 border-2"
-        >
-          <div class="hero-content flex-col lg:flex-row">
-            <img
-              src="./assets/noakhali.png"
-              class="w-full lg:max-w-sm rounded-lg shadow-2xl"
-            />
-            <div>
-              <div
-                class="flex items-center justify-center gap-1 w-[50%] lg:w-[20%] rounded-lg h-10 bg-[#e1e1e1d0] mb-2 poppins-font"
-              >
-                <img class="h-[60%]" src="./assets/coin.png" alt="" />
-                <h1 id="noakhali-total-donation" class="text-[#111111] font-medium poppins-font">16000</h1>
-                <h1 class="text-[#111111] font-medium poppins-font">BDT</h1>
-              </div>
-              <h1 class="text-xl font-bold poppins-font">
-                Donate for Flood at Noakhali, Bangladesh
-              </h1>
-              <p class="py-4 text-justify poppins-font text-sm">
-                The recent floods in Noakhali have caused significant damage to
-                homes infrastructure. Your donation will help provide essential
-                supplies and to those affected by this disaster. Every
-                contribution, big or small, makes difference. Please join us in
-                supporting the relief efforts and making a positive impact on
-                the lives of those in need.
-              </p>
-              <input id="input-donation-amount"
-                type="text"
-                placeholder="Enter Donation Amount"
-                class="input input-bordered w-full"
+    </header>
+    <main>
+      <section id="section-donation">
+        <!-- Card-1 -->
+        <div class="mx-3 lg:mx-56 mt-16">
+          <div
+            class="hero bg-[#eceaea38] p-3 rounded-lg border-gray-100 border-2"
+          >
+            <div class="hero-content flex-col lg:flex-row">
+              <img
+                src="./assets/noakhali.png"
+                class="w-full lg:max-w-sm rounded-lg shadow-2xl"
               />
-              <button
-                id="btn-donate-now" class="btn w-full mt-3 poppins-font bg-orange-400 text-white"
-              >
-                Donate Now
-              </button>
+              <div>
+                <div
+                  class="flex items-center justify-center gap-1 w-[50%] lg:w-[20%] rounded-lg h-10 bg-[#e1e1e1d0] mb-2 poppins-font"
+                >
+                  <img class="h-[60%]" src="./assets/coin.png" alt="" />
+                  <h1
+                    id="noakhali-total-donation"
+                    class="text-[#111111] font-medium poppins-font"
+                  >
+                    16000
+                  </h1>
+                  <h1 class="text-[#111111] font-medium poppins-font">BDT</h1>
+                </div>
+                <h1 class="text-xl font-bold poppins-font">
+                  Donate <span id="flood-at-noakhali">for Flood at Noakhali, Bangladesh</span>
+                </h1>
+                <p class="py-4 text-justify poppins-font text-sm">
+                  The recent floods in Noakhali have caused significant damage
+                  to homes infrastructure. Your donation will help provide
+                  essential supplies and to those affected by this disaster.
+                  Every contribution, big or small, makes difference. Please
+                  join us in supporting the relief efforts and making a positive
+                  impact on the lives of those in need.
+                </p>
+                <input
+                  id="input-donation-amount"
+                  type="text"
+                  placeholder="Enter Donation Amount"
+                  class="input input-bordered w-full"
+                />
+                <button
+                  id="btn-donate-now"
+                  class="btn w-full mt-3 poppins-font bg-orange-400 text-white"
+                >
+                  Donate Now
+                </button>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <!-- Card-2 -->
-      <div class="mx-3 lg:mx-56 mt-16">
-        <div
-          class="hero bg-[#eceaea38] p-3 rounded-lg border-gray-100 border-2"
-        >
-          <div class="hero-content flex-col lg:flex-row">
-            <img
-              src="./assets/feni.png"
-              class="w-full lg:max-w-sm rounded-lg shadow-2xl"
-            />
-            <div>
-              <div
-                class="flex items-center justify-center gap-1 w-[50%] lg:w-[20%] rounded-lg h-10 bg-[#e1e1e1d0] mb-2 poppins-font"
-              >
-                <img class="h-[60%]" src="./assets/coin.png" alt="" />
-                <h1 id="feni-total-donation" class="text-[#111111] font-medium poppins-font">11000</h1>
-                <h1 class="text-[#111111] font-medium poppins-font">BDT</h1>
-              </div>
-              <h1 class="text-xl font-bold poppins-font">
-                Donate for Flood Relief in Feni, Bangladesh
-              </h1>
-              <p class="py-4 text-justify poppins-font text-sm">
-                The recent floods in Feni have devastated local communities,
-                leading to severe disruption. Your generous donation will help
-                provide immediate aid, including food and medical supplies, to
-                those affected by this calamity. Together, we can offer crucial
-                support, help rebuild lives in the aftermath of this disaster.
-                Please consider donating today to assist those in urgent need.
-              </p>
-              <input
-                id="input-donate-feni" type="text"
-                placeholder="Enter Donation Amount"
-                class="input input-bordered w-full"
+        <!-- Card-2 -->
+        <div class="mx-3 lg:mx-56 mt-16">
+          <div
+            class="hero bg-[#eceaea38] p-3 rounded-lg border-gray-100 border-2"
+          >
+            <div class="hero-content flex-col lg:flex-row">
+              <img
+                src="./assets/feni.png"
+                class="w-full lg:max-w-sm rounded-lg shadow-2xl"
               />
-              <button
-                id="btn-donate-feni" class="btn w-full mt-3 poppins-font bg-orange-400 text-white"
-              >
-                Donate Now
-              </button>
+              <div>
+                <div
+                  class="flex items-center justify-center gap-1 w-[50%] lg:w-[20%] rounded-lg h-10 bg-[#e1e1e1d0] mb-2 poppins-font"
+                >
+                  <img class="h-[60%]" src="./assets/coin.png" alt="" />
+                  <h1
+                    id="feni-total-donation"
+                    class="text-[#111111] font-medium poppins-font"
+                  >
+                    11000
+                  </h1>
+                  <h1 class="text-[#111111] font-medium poppins-font">BDT</h1>
+                </div>
+                <h1 class="text-xl font-bold poppins-font">
+                  Donate <span id="flood-at-feni">for Flood Relief in Feni, Bangladesh</span>
+                </h1>
+                <p class="py-4 text-justify poppins-font text-sm">
+                  The recent floods in Feni have devastated local communities,
+                  leading to severe disruption. Your generous donation will help
+                  provide immediate aid, including food and medical supplies, to
+                  those affected by this calamity. Together, we can offer
+                  crucial support, help rebuild lives in the aftermath of this
+                  disaster. Please consider donating today to assist those in
+                  urgent need.
+                </p>
+                <input
+                  id="input-donate-feni"
+                  type="text"
+                  placeholder="Enter Donation Amount"
+                  class="input input-bordered w-full"
+                />
+                <button
+                  id="btn-donate-feni"
+                  class="btn w-full mt-3 poppins-font bg-orange-400 text-white"
+                >
+                  Donate Now
+                </button>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <!-- Card-3 -->
-      <div class="mx-3 lg:mx-56 mt-16">
-        <div
-          class="hero bg-[#eceaea38] p-3 rounded-lg border-gray-100 border-2"
-        >
-          <div class="hero-content flex-col lg:flex-row">
-            <img
-              src="./assets/quota-protest.png"
-              class="w-full lg:max-w-sm rounded-lg shadow-2xl"
-            />
-            <div>
-              <div
-                class="flex items-center justify-center gap-1 w-[50%] lg:w-[20%] rounded-lg h-10 bg-[#e1e1e1d0] mb-2 poppins-font"
-              >
-                <img class="h-[60%]" src="./assets/coin.png" alt="" />
-                <h1 id="quota-total-donation" class="text-[#111111] font-medium poppins-font">24000</h1>
-                <h1 class="text-[#111111] font-medium poppins-font">BDT</h1>
-              </div>
-              <h1 class="text-xl font-bold poppins-font">
-                Aid for Injured in the Quota Movement
-              </h1>
-              <p class="py-4 text-justify poppins-font text-sm">
-                The recent Quota movement has resulted in numerous injuries and
-                significant hardship for many individuals. Your support is
-                crucial in providing medical assistance to those affected. By
-                contributing, you help ensure that injured individuals receive
-                the care and support they need. Please consider making a
-                donation to support these brave individuals in their time of
-                need.
-              </p>
-              <input
-                id="input-donate-quota" type="text"
-                placeholder="Enter Donation Amount"
-                class="input input-bordered w-full"
+        <!-- Card-3 -->
+        <div class="mx-3 lg:mx-56 mt-16">
+          <div
+            class="hero bg-[#eceaea38] p-3 rounded-lg border-gray-100 border-2"
+          >
+            <div class="hero-content flex-col lg:flex-row">
+              <img
+                src="./assets/quota-protest.png"
+                class="w-full lg:max-w-sm rounded-lg shadow-2xl"
               />
-              <button
-                id="btn-donate-quota" class="btn w-full mt-3 poppins-font bg-orange-400 text-white"
-              >
-                Donate Now
-              </button>
+              <div>
+                <div
+                  class="flex items-center justify-center gap-1 w-[50%] lg:w-[20%] rounded-lg h-10 bg-[#e1e1e1d0] mb-2 poppins-font"
+                >
+                  <img class="h-[60%]" src="./assets/coin.png" alt="" />
+                  <h1
+                    id="quota-total-donation"
+                    class="text-[#111111] font-medium poppins-font"
+                  >
+                    24000
+                  </h1>
+                  <h1 class="text-[#111111] font-medium poppins-font">BDT</h1>
+                </div>
+                <h1 id="quota-protest" class="text-xl font-bold poppins-font">
+                  Aid for Injured in the Quota Movement
+                </h1>
+                <p class="py-4 text-justify poppins-font text-sm">
+                  The recent Quota movement has resulted in numerous injuries
+                  and significant hardship for many individuals. Your support is
+                  crucial in providing medical assistance to those affected. By
+                  contributing, you help ensure that injured individuals receive
+                  the care and support they need. Please consider making a
+                  donation to support these brave individuals in their time of
+                  need.
+                </p>
+                <input
+                  id="input-donate-quota"
+                  type="text"
+                  placeholder="Enter Donation Amount"
+                  class="input input-bordered w-full"
+                />
+                <button
+                  id="btn-donate-quota"
+                  class="btn w-full mt-3 poppins-font bg-orange-400 text-white"
+                >
+                  Donate Now
+                </button>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
+
+      <!-- Donation History Section -->
+      <section id="section-donation-history" class="hidden">
+        <div id="donation-history-container">
+          
+        </div>
+      </section>
     </main>
     <!-- Footer Section -->
     <footer
@@ -194,7 +232,11 @@
     >
       <aside>
         <h1 class="text-lg font-semibold">Hands For Bangladesh</h1>
-        <p>Helping People With Our Heart Since 2012.</p>
+        <p>
+          Saheen Alam Shuvo, Founder & CEO
+          <br />
+          Helping People With Our Heart Since 2012.
+        </p>
       </aside>
       <nav>
         <h6 class="footer-title">Social</h6>
@@ -245,5 +287,6 @@
     <script src="./js/donateNoakhali.js"></script>
     <script src="./js/donateFeni.js"></script>
     <script src="./js/donateQuota.js"></script>
+    <script src="./js/donationHistory.js"></script>
   </body>
 </html>

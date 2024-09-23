@@ -3,7 +3,7 @@ document
   .addEventListener("click", function (event) {
     event.preventDefault();
 
-// Money Donation Input
+    // Money Donation Input
     const donateMoney = getInputFieldValueById("input-donate-quota");
     // NaN verify
     if (isNaN(donateMoney)) {
