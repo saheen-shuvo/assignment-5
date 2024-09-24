@@ -15,17 +15,21 @@ document
     // Balance update after donation
     const balance = getTextFieldValueById("account-balance");
     console.log("Account Balance with parameter", balance);
-    const newBalance = balance - donateMoney;
+
     // Prevent Negative Balance
-    if (donateMoney > balance) {
-      alert("You have insufficient balance.");
+    if (donateMoney <= 0) {
+      alert("Donation Failed. Please Try Again.");
       return;
     }
-    document.getElementById("account-balance").innerText = newBalance;
 
     // Quota Fund update after donation
     const quotaFund = getTextFieldValueById("quota-total-donation");
     console.log("Quota Fund with parameter", quotaFund);
-    const newFund = quotaFund + donateMoney;
-    document.getElementById("quota-total-donation").innerText = newFund;
+    if (donateMoney <= balance) {
+      const newFund = quotaFund + donateMoney;
+      document.getElementById("quota-total-donation").innerText = newFund;
+    } else {
+      alert("Donation Failed. Please Try Again.");
+      return;
+    }
   });

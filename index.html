@@ -30,7 +30,10 @@
   <body>
     <header>
       <!-- Nav Section -->
-      <nav class="flex h-28 bg-[#F9F7F3] w-full mb-16">
+      <nav
+        id="navbar"
+        class="flex h-28 bg-[#F9F7F3] w-full mb-16 sticky top-0 z-50"
+      >
         <div class="flex justify-center items-center w-[26.3%]">
           <button
             class="btn h-8 px-4 font-medium text-sm poppins-font bg-orange-400 text-white lg:px-8 lg:h-10 lg:font-semibold lg:text-base"
@@ -52,15 +55,22 @@
             id="account-balance"
             class="text-[#111111] font-semibold poppins-font"
           >
-            7000
+            6000
           </h1>
           <h1 class="text-[#111111] font-semibold poppins-font">BDT</h1>
         </div>
       </nav>
       <!-- Button Section -->
       <div class="flex justify-center gap-4">
-        <button id="btn-donation" class="btn btn-lg w-[160px] poppins-font">Donation</button>
-        <button id="btn-donation-history" class="btn btn-lg w-[160px] poppins-font">History</button>
+        <button id="btn-donation" class="btn btn-lg w-[160px] poppins-font">
+          Donation
+        </button>
+        <button
+          id="btn-donation-history"
+          class="btn btn-lg w-[160px] poppins-font"
+        >
+          History
+        </button>
       </div>
     </header>
     <main>
@@ -89,7 +99,10 @@
                   <h1 class="text-[#111111] font-medium poppins-font">BDT</h1>
                 </div>
                 <h1 class="text-xl font-bold poppins-font">
-                  Donate <span id="flood-at-noakhali">for Flood at Noakhali, Bangladesh</span>
+                  Donate
+                  <span id="flood-at-noakhali"
+                    >for Flood at Noakhali, Bangladesh</span
+                  >
                 </h1>
                 <p class="py-4 text-justify poppins-font text-sm">
                   The recent floods in Noakhali have caused significant damage
@@ -139,7 +152,10 @@
                   <h1 class="text-[#111111] font-medium poppins-font">BDT</h1>
                 </div>
                 <h1 class="text-xl font-bold poppins-font">
-                  Donate <span id="flood-at-feni">for Flood Relief in Feni, Bangladesh</span>
+                  Donate
+                  <span id="flood-at-feni"
+                    >for Flood Relief in Feni, Bangladesh</span
+                  >
                 </h1>
                 <p class="py-4 text-justify poppins-font text-sm">
                   The recent floods in Feni have devastated local communities,
@@ -221,13 +237,12 @@
 
       <!-- Donation History Section -->
       <section id="section-donation-history" class="hidden">
-        <div id="donation-history-container">
-          
-        </div>
+        <div id="donation-history-container"></div>
       </section>
     </main>
     <!-- Footer Section -->
     <footer
+      id="footer"
       class="footer bg-[#F9F7F3] text-neutral-content p-10 mt-16 text-black poppins-font"
     >
       <aside>

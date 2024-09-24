@@ -20,6 +20,7 @@ function getTextFieldStringById(id) {
   return textString;
 }
 
+
 // create a new `Date` object
 const now = new Date();
 

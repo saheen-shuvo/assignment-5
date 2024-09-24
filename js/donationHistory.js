@@ -26,19 +26,30 @@ document
     // Donation History
     // push from card 1
     const div1 = document.createElement("div");
-    div1.innerHTML = `
+    if (donateMoneyNoakhali > 0) {
+      div1.innerHTML = `
           <div class="mx-3 flex flex-col poppins-font justify-center pl-5 lg:mx-56 mt-10 rounded-xl h-32 border-2 border-[#bfbfbf]">
             <h1 class="font-bold">${donateMoneyNoakhali} Taka is Donated ${floodAtNoakhali}</h1>
             <p class="mt-2">Date : ${currentDateTime} GMT +0600 (Bangladesh Standard Time)</p>
           </div>
 `;
+    } else {
+      return;
+    }
     const balance = getTextFieldValueById("account-balance");
-    console.log("Account Balance with parameter", balance);
-    if (donateMoneyNoakhali < balance) {
+    console.log(balance);
+    console.log(donateMoneyNoakhali);
+    if (donateMoneyNoakhali <= balance) {
       document.getElementById("donation-history-container").appendChild(div1);
     } else {
       return;
     }
+    if (donateMoneyNoakhali > balance) {
+      alert("Donation Failed. Please Try Again.");
+      return;
+    }
+    const newBalance = balance - donateMoneyNoakhali;
+    document.getElementById("account-balance").innerText = newBalance;
   });
 
 //   Feni Donate Button on click
@@ -56,13 +67,32 @@ document
     // Donation History
     // push from card 2
     const div1 = document.createElement("div");
-    div1.innerHTML = `
+    if (donateMoneyFeni > 0) {
+      div1.innerHTML = `
           <div class="mx-3 flex flex-col poppins-font justify-center pl-5 lg:mx-56 mt-10 rounded-xl h-32 border-2 border-[#bfbfbf]">
             <h1 class="font-bold">${donateMoneyFeni} Taka is Donated ${floodAtFeni}</h1>
             <p class="mt-2">Date : ${currentDateTime} GMT +0600 (Bangladesh Standard Time)</p>
           </div>
 `;
-    document.getElementById("donation-history-container").appendChild(div1);
+    } else {
+      return;
+    }
+    const balance = getTextFieldValueById("account-balance");
+    console.log(balance);
+    console.log(donateMoneyFeni);
+    const donateMoneyNumberFeni = parseFloat(donateMoneyFeni);
+    console.log(donateMoneyNumberFeni);
+    if (donateMoneyNumberFeni <= balance) {
+      document.getElementById("donation-history-container").appendChild(div1);
+    } else {
+      return;
+    }
+    if (donateMoneyNumberFeni > balance) {
+      alert("Donation Failed. Please Try Again.");
+      return;
+    }
+    const newBalance = balance - donateMoneyNumberFeni;
+    document.getElementById("account-balance").innerText = newBalance;
   });
 
 //   Quota Donate Button on click
@@ -80,11 +110,30 @@ document
     // Donation History
     // push from card 3
     const div1 = document.createElement("div");
-    div1.innerHTML = `
+    if (donateMoneyQuota > 0) {
+      div1.innerHTML = `
         <div class="mx-3 flex flex-col poppins-font justify-center pl-5 lg:mx-56 mt-10 rounded-xl h-32 border-2 border-[#bfbfbf]">
           <h1 class="font-bold">${donateMoneyQuota} Taka is Donated ${donateForQuota}</h1>
           <p class="mt-2">Date : ${currentDateTime} GMT +0600 (Bangladesh Standard Time)</p>
         </div>
 `;
-    document.getElementById("donation-history-container").appendChild(div1);
+    } else {
+      return;
+    }
+    const balance = getTextFieldValueById("account-balance");
+    console.log(balance);
+    console.log(donateMoneyQuota);
+    const donateMoneyNumberQuota = parseFloat(donateMoneyQuota);
+    console.log(donateMoneyNumberQuota);
+    if (donateMoneyNumberQuota <= balance) {
+      document.getElementById("donation-history-container").appendChild(div1);
+    } else {
+      return;
+    }
+    if (donateMoneyNumberQuota > balance) {
+      alert("Donation Failed. Please Try Again.");
+      return;
+    }
+    const newBalance = balance - donateMoneyNumberQuota;
+    document.getElementById("account-balance").innerText = newBalance;
   });
