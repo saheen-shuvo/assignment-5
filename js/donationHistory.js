@@ -2,6 +2,7 @@
 document.getElementById("btn-donation").addEventListener("click", function () {
   console.log("Show Donation  btn clicked");
   showSectionById("section-donation");
+  changeButtonColorById("btn-donation");
 });
 // History
 document
@@ -9,6 +10,7 @@ document
   .addEventListener("click", function () {
     console.log("Show Donation Histroy btn clicked");
     showSectionById("section-donation-history");
+    changeButtonColorById("btn-donation-history");
   });
 
 //   Noakhali Donate Button on click
