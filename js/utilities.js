@@ -39,17 +39,6 @@ function showSectionById(id) {
 
 // Button Style
 function changeButtonColorById(id) {
-  // Add
-  // document
-  // .getElementById("btn-donation-history")
-  // .classList.add("bg-orange-400", "text-white");
-  
-  // document
-  //   .getElementById("btn-donation")
-  //   .classList.add("bg-orange-400", "text-white");
-
-    // Show
-    // document.getElementById(id).classList.remove("bg-orange-400", "text-white");
     if(id === "btn-donation"){
       document.getElementById('btn-donation').classList.add("bg-orange-400", "text-white");
       document.getElementById('btn-donation-history').classList.remove("bg-orange-400", "text-white");
@@ -59,3 +48,9 @@ function changeButtonColorById(id) {
       document.getElementById('btn-donation').classList.remove("bg-orange-400", "text-white");
     }
 }
+
+document.getElementById("btn-home").addEventListener("click", function (event) {
+  event.preventDefault();
+
+  window.location.href = "./index.html";
+});

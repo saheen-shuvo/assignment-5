@@ -26,8 +26,8 @@
         font-family: "Poppins", system-ui;
       }
       .blur {
-            backdrop-filter: blur(1px);
-        }
+        backdrop-filter: blur(1px);
+      }
     </style>
   </head>
   <body>
@@ -35,10 +35,10 @@
       <!-- Nav Section -->
       <nav
         id="navbar"
-        class="flex h-28 bg-[#F9F7F3] w-full mb-16 fixed top-0 z-50"
+        class="flex h-20 bg-[#F9F7F3] w-full mb-16 fixed top-0 z-50 lg:h-28"
       >
         <div class="flex justify-center items-center w-[26.3%]">
-          <button
+          <button id="btn-blog"
             class="btn h-8 px-4 font-medium text-sm poppins-font bg-orange-400 text-white lg:px-8 lg:h-10 lg:font-semibold lg:text-base"
           >
             Blog
@@ -64,13 +64,18 @@
         </div>
       </nav>
       <!-- Button Section -->
-      <div class="flex justify-center  gap-4 fixed bg-transparent py-4 w-full top-28 z-50 pl-7 lg:pl-[19] backdrop-blur-lg">
-        <button id="btn-donation" class="btn  btn-lg w-[160px] poppins-font bg-orange-400 text-white">
+      <div
+        class="flex justify-center gap-4 fixed bg-transparent py-4 w-full top-20 lg:top-28 z-50 px-4 lg:pl-[19] backdrop-blur-lg left-0 right-0 mx-auto"
+      >
+        <button
+          id="btn-donation"
+          class="btn btn-lg w-[140px] lg:w-[160px] poppins-font bg-orange-400 text-white"
+        >
           Donation
         </button>
         <button
           id="btn-donation-history"
-          class="btn btn-lg w-[160px] poppins-font "
+          class="btn btn-lg w-[140px] lg:w-[160px] poppins-font"
         >
           History
         </button>
@@ -301,10 +306,27 @@
         </div>
       </nav>
     </footer>
+    
+    <!-- Modal -->
+    <dialog id="my_modal_1" class="modal">
+      <div class="modal-box">
+        <h3 class="text-3xl text-center font-bold">Congrats!</h3>
+        <img class="ml-auto mr-auto mt-3 w-10" src="./assets/coin.png" alt="" />
+        <p class="py-4 text-center">You Have Donated For Humankind</p>
+        <h3 class="text-xl text-center font-bold">Successfully</h3>
+        <div class="modal-action">
+          <form method="dialog">
+            <!-- if there is a button in form, it will close the modal -->
+            <button class="btn">Close Confirmation</button>
+          </form>
+        </div>
+      </div>
+    </dialog>
     <script src="./js/utilities.js"></script>
     <script src="./js/donateNoakhali.js"></script>
     <script src="./js/donateFeni.js"></script>
     <script src="./js/donateQuota.js"></script>
     <script src="./js/donationHistory.js"></script>
+    <script src="./js/blog.js"></script>
   </body>
 </html>

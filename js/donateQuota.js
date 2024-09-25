@@ -32,4 +32,5 @@ document
       alert("Donation Failed. Please Try Again.");
       return;
     }
+    document.getElementById('my_modal_1').showModal();
   });

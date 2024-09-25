@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Important FAQ</title>
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Daisy Ui CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS Style -->
+    <style>
+      .poppins-font {
+        font-family: "Poppins", system-ui;
+      }
+    </style>
+    <script
+      src="https://kit.fontawesome.com/6e7928898c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav id="navbar" class="flex h-20 bg-[#F9F7F3] w-full mb-16 lg:h-28">
+        <div class="flex justify-center items-center w-[26.3%]">
+          <button id="btn-home"
+            class="btn h-8 px-4 font-medium text-sm poppins-font bg-orange-400 text-white lg:px-8 lg:h-10 lg:font-semibold lg:text-base"
+          >
+            Home
+          </button>
+        </div>
+        <div class="flex justify-center items-center gap-2 w-[40.3%]">
+          <img class="h-[20%] lg:h-[40%]" src="./assets/logo.png" alt="" />
+          <h1
+            class="text-[#111111] text-base text-center lg:text-2xl font-semibold poppins-font"
+          >
+            Hands For Bangladesh
+          </h1>
+        </div>
+        <div class="flex justify-center items-center gap-[5px] w-[33.3%]">
+          <img class="h-[18%] lg:h-[25%]" src="./assets/coin.png" alt="" />
+          <h1
+            id="account-balance"
+            class="text-[#111111] font-semibold poppins-font"
+          >
+            6000
+          </h1>
+          <h1 class="text-[#111111] font-semibold poppins-font">BDT</h1>
+        </div>
+      </nav>
+    </header>
+    <main class="mx-4 lg:mx-28">
+      <!-- Accordian -->
+      <h1 class="text-4xl font-semibold poppins-font mb-7">
+        IMPORTANT FAQ <i class="fa-solid fa-circle-question"></i>
+      </h1>
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" checked="checked" />
+        <div class="collapse-title text-xl font-medium poppins-font">
+          What is the Document Object Model (DOM)?
+        </div>
+        <div class="collapse-content">
+          <p class="poppins-font">
+            The Document Object Model (DOM) is a programming interface that
+            organizes HTML or XML documents into a hierarchical tree structure.
+            It allows developers to access, manipulate, and modify the
+            document's elements, attributes, and content using scripting
+            languages like JavaScript.
+          </p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium poppins-font">
+          How do you select an object from the DOM?
+        </div>
+        <div class="collapse-content">
+          <p class="poppins-font">
+            To select an object from the DOM, you can use methods like
+            `document.getElementById()` for IDs, `document.querySelector()` for
+            CSS selectors, or `document.getElementsByClassName()` for class
+            names. These methods allow you to access and manipulate specific
+            elements programmatically.
+          </p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium poppins-font">
+          What is event delegation in context of DOM, and why is it useful?
+        </div>
+        <div class="collapse-content">
+          <p class="poppins-font">
+            Event delegation is a technique where a single event listener is
+            added to a parent element to manage events for its child elements.
+            It improves performance by reducing multiple listeners and
+            simplifies handling dynamically added elements within the DOM.
+          </p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" checked="checked" />
+        <div class="collapse-title text-xl font-medium poppins-font">
+          How do you manipulate an element's attributes and styles using DOM?
+        </div>
+        <div class="collapse-content">
+          <p class="poppins-font">
+            To manipulate an element's attributes, use methods like
+            `setAttribute()` or `removeAttribute()`. For styles, modify the
+            `style` property directly (e.g., `element.style.color = "blue"`) or
+            use `classList` to add, remove, or toggle CSS classes dynamically.
+          </p>
+        </div>
+      </div>
+    </main>
+    <script src="./js/blog.js"></script>
+    <script src="./js/utilities.js"></script>
+  </body>
+</html>

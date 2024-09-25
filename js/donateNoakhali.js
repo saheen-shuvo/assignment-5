@@ -28,8 +28,10 @@ document
    if (donateMoney !== balance){
     const newFund = noakhaliFund + donateMoney;
     document.getElementById("noakhali-total-donation").innerText = newFund;
+    
    }
    else{
     return;
    }
+   document.getElementById('my_modal_1').showModal();
   });
