@@ -25,7 +25,7 @@ document
     // Noakhali Fund update after donation
     const noakhaliFund = getTextFieldValueById("noakhali-total-donation");
     console.log("Noakhali Fund with parameter", noakhaliFund);
-   if (donateMoney !== balance){
+   if (donateMoney <= balance){
     const newFund = noakhaliFund + donateMoney;
     document.getElementById("noakhali-total-donation").innerText = newFund;
     
